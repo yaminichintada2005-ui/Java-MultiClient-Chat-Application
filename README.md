@@ -1,57 +1,99 @@
+<div align="center">
+
 # 💬 Java Multi-Client Chat Application
 
-![Java](https://img.shields.io/badge/Java-17-orange)
-![Socket Programming](https://img.shields.io/badge/Socket-Programming-blue)
-![Multithreading](https://img.shields.io/badge/Multithreading-Java-success)
-![Maven](https://img.shields.io/badge/Maven-Build-red)
-![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
-![License](https://img.shields.io/badge/License-MIT-green)
+### Real-Time Chat Application using Java Socket Programming & Multithreading
+
+![Java](https://img.shields.io/badge/Java-17-orange?style=for-the-badge)
+![Socket Programming](https://img.shields.io/badge/Socket-Programming-blue?style=for-the-badge)
+![Multithreading](https://img.shields.io/badge/Multithreading-Java-success?style=for-the-badge)
+![Maven](https://img.shields.io/badge/Maven-Build-red?style=for-the-badge)
+![GitHub](https://img.shields.io/badge/GitHub-Open%20Source-black?style=for-the-badge)
+
+A console-based multi-client chat application that enables multiple users to communicate simultaneously through a centralized server using Java Socket Programming and Multithreading.
+
+</div>
 
 ---
 
-## 📖 Overview
+# 📖 Overview
 
-The Java Multi-Client Chat Application is a console-based networking application developed using Java Socket Programming and Multithreading.
+The **Java Multi-Client Chat Application** is a networking project developed using **Core Java**.
 
-The application allows multiple clients to connect to a central server and communicate with each other in real time. Each client connection is managed using a dedicated thread, enabling simultaneous communication between users.
+This application follows the **Client-Server Architecture**, where a server listens for incoming client connections and manages communication between multiple connected clients.
 
-This project demonstrates the implementation of networking concepts, concurrent programming, client-server architecture, and Java I/O streams.
+Each client is handled by a dedicated thread, allowing several users to chat simultaneously without interrupting one another.
 
----
+This project demonstrates real-world concepts such as:
 
-## ✨ Features
-
-- Real-time communication
-- Multi-client support
-- Client-Server architecture
 - Socket Programming
+- TCP Communication
 - Multithreading
-- Username-based chatting
-- Message broadcasting
-- Multiple client handling
-- Console-based interface
-- Modular project structure
+- Java Networking
+- Client-Server Architecture
+- Concurrent Programming
 
 ---
 
-## 🛠 Technologies Used
+# ✨ Features
+
+✅ Multi-client Communication
+
+✅ Real-time Message Broadcasting
+
+✅ Java Socket Programming
+
+✅ Multithreading using Thread Class
+
+✅ Client-Server Architecture
+
+✅ Username Support
+
+✅ Multiple Client Handling
+
+✅ Console-Based Interface
+
+✅ Maven Project
+
+---
+
+# 🛠 Technologies Used
 
 | Technology | Purpose |
 |------------|----------|
 | Java | Programming Language |
 | Socket Programming | Network Communication |
 | Multithreading | Concurrent Client Handling |
-| Java I/O | Reading and Writing Messages |
-| Maven | Dependency Management |
-| Eclipse IDE | Development Environment |
+| Java I/O Streams | Reading & Writing Messages |
+| Maven | Project Management |
+| Eclipse IDE | Development |
 | Git | Version Control |
-| GitHub | Source Code Hosting |
+| GitHub | Project Hosting |
 
 ---
 
-## 📂 Project Structure
+# 🏗 System Architecture
 
+```text
+                +----------------------+
+                |      Chat Server     |
+                |   Port : 5000        |
+                +----------+-----------+
+                           |
+      ---------------------------------------------
+      |                   |                       |
+      |                   |                       |
++------------+     +------------+        +------------+
+| Client 1   |     | Client 2   |        | Client 3   |
+| Yamini     |     | Ravi       |        | User 3     |
++------------+     +------------+        +------------+
 ```
+
+---
+
+# 📂 Project Structure
+
+```text
 ChatApplication
 │
 ├── src
@@ -66,18 +108,20 @@ ChatApplication
 ├── model
 │      Message.java
 │
-└── pom.xml
+├── pom.xml
+│
+└── README.md
 ```
 
 ---
 
-## ⚙ Working Flow
+# ⚙ Working Flow
 
-```
+```text
 Start Server
       │
       ▼
-Server listens on Port 5000
+Server waits for clients
       │
       ▼
 Client connects
@@ -92,30 +136,31 @@ ClientHandler Thread Created
 Client sends message
       │
       ▼
-Server receives message
+Server broadcasts message
       │
       ▼
-Broadcast to all clients
-      │
-      ▼
-Clients display message
+All connected clients receive message
 ```
 
 ---
 
-## 🚀 How to Run
+# 🚀 How to Run
 
-### 1️⃣ Clone Repository
+## 1. Clone Repository
 
 ```bash
 git clone https://github.com/yaminichintada2005-ui/Java-MultiClient-Chat-Application.git
 ```
 
-### 2️⃣ Open in Eclipse
+---
 
-Import the project as an Existing Maven Project.
+## 2. Open Project
 
-### 3️⃣ Run Server
+Import the project into Eclipse as a Maven Project.
+
+---
+
+## 3. Run Server
 
 Run
 
@@ -123,7 +168,7 @@ Run
 ChatServer.java
 ```
 
-Console Output
+Output
 
 ```
 CHAT SERVER STARTED
@@ -132,7 +177,7 @@ Waiting for clients...
 
 ---
 
-### 4️⃣ Run Client
+## 4. Run Client
 
 Run
 
@@ -154,9 +199,15 @@ Yamini
 
 ---
 
-### 5️⃣ Start Another Client
+## 5. Run Another Client
 
-Run ChatClient.java again.
+Run
+
+```
+ChatClient.java
+```
+
+again.
 
 Enter
 
@@ -164,73 +215,70 @@ Enter
 Ravi
 ```
 
-Now both clients can communicate.
+Now both users can communicate.
 
 ---
 
-## 📸 Screenshots
+# 📸 Screenshots
 
-### Server
+## Server
 
 (Add server screenshot)
 
 ---
 
-### Client 1
+## Client 1
 
-(Add client1 screenshot)
-
----
-
-### Client 2
-
-(Add client2 screenshot)
+(Add Client 1 screenshot)
 
 ---
 
-## 📚 Concepts Covered
+## Client 2
+
+(Add Client 2 screenshot)
+
+---
+
+# 📚 Concepts Covered
 
 - Socket Programming
 - TCP Communication
 - Client-Server Architecture
 - Java Networking
 - Java Threads
-- Concurrency
-- Java I/O Streams
+- Java I/O
 - Exception Handling
 - Object-Oriented Programming
 
 ---
 
-## 🎯 Learning Outcomes
+# 🎯 Learning Outcomes
 
 Through this project I learned:
 
-- How sockets establish communication
-- How multiple clients connect to one server
-- How multithreading enables concurrent communication
-- How broadcasting messages works
-- Java networking fundamentals
-- Thread lifecycle
-- Real-world client-server implementation
+- Creating TCP Server using Java
+- Connecting multiple clients simultaneously
+- Implementing multithreading
+- Broadcasting messages
+- Handling client connections
+- Java Networking Fundamentals
 
 ---
 
-## 🚀 Future Enhancements
+# 🚀 Future Enhancements
 
-- Private Messaging
+- Private Chat
 - Online User List
 - Chat Rooms
 - File Sharing
-- GUI using JavaFX
+- JavaFX GUI
 - Database Integration
-- Message Encryption
 - Spring Boot WebSocket Version
-- Authentication and Login System
+- User Authentication
 
 ---
 
-## 👩‍💻 Author
+# 👩‍💻 Author
 
 **Yamini Chintada**
 
@@ -244,6 +292,8 @@ https://github.com/yaminichintada2005-ui
 
 ---
 
-## ⭐ Support
+<div align="center">
 
-If you found this project useful, consider giving it a ⭐ on GitHub.
+### ⭐ If you like this project, don't forget to give it a Star!
+
+</div>
