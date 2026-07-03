@@ -1,5 +1,8 @@
 <div align="center">
 
+<p align="center">
+  <img src="screenshots/banner.png" alt="Java Multi-Client Chat Application Banner">
+</p>
 # 💬 Java Multi-Client Chat Application
 
 ### Real-Time Chat Application using Java Socket Programming & Multithreading
