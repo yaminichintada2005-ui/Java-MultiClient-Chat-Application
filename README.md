@@ -218,24 +218,20 @@ Ravi
 Now both users can communicate.
 
 ---
-
 # 📸 Screenshots
 
-## Server
+## 🖥️ Server
 
-(Add server screenshot)
+![Server](screenshots/server.png)
 
----
+## 💬 Client 1
 
-## Client 1
+![Client 1](screenshots/client1.png)
 
-(Add Client 1 screenshot)
+## 💬 Client 2
 
----
+![Client 2](screenshots/client2.png)
 
-## Client 2
-
-(Add Client 2 screenshot)
 
 ---
 
